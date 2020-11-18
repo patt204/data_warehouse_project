@@ -1,0 +1,200 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ab2c49dd-5610-484b-9c32-5c93c1707d77" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Wynajem Mieszkan5</ID>
+  <Name>Wynajem Mieszkan5</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Wynajem Mieszkan5</DataSourceID>
+  <Schema>
+    <xs:schema id="Wynajem_x0020_Mieszkan5" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Wynajem_x0020_Mieszkan5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="36021b4e-91c0-4baa-acf0-daf608f626c2">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_data" msprop:design-time-name="a72e305b-a6ef-44d5-a29b-274f139ee9a6" msprop:DbTableName="data" msprop:FriendlyName="data" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="data" msprop:design-time-name="d4a25471-d4ba-4f60-b3cd-6a943e2eb640" msprop:DbColumnName="data" msprop:FriendlyName="data" type="xs:dateTime" />
+                  <xs:element name="nr_miesiaca" msprop:design-time-name="189d5581-af3f-499a-8ac0-1c93fa0ba74e" msprop:DbColumnName="nr_miesiaca" msprop:FriendlyName="nr_miesiaca" type="xs:double" minOccurs="0" />
+                  <xs:element name="nazwa_miesiąca" msprop:design-time-name="67e7e4d5-1f5b-4299-b338-a3d6750e3a7a" msprop:DbColumnName="nazwa_miesiąca" msprop:FriendlyName="nazwa_miesiąca" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="dzień_tygodnia" msprop:design-time-name="6a3e2544-3d31-4215-9452-549030200976" msprop:DbColumnName="dzień_tygodnia" msprop:FriendlyName="dzień_tygodnia" type="xs:double" minOccurs="0" />
+                  <xs:element name="id_kwartal" msprop:design-time-name="8085a77c-de8d-41d9-871c-ecd6829aac85" msprop:DbColumnName="id_kwartal" msprop:FriendlyName="id_kwartal">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_kwartal" msprop:design-time-name="5d8deee6-4b2c-429d-a0f3-1c82cd7061d4" msprop:DbTableName="kwartal" msprop:FriendlyName="kwartal" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_kwartal" msprop:design-time-name="f016efbc-18d9-4735-ab00-b468a45164a3" msprop:DbColumnName="id_kwartal" msprop:FriendlyName="id_kwartal">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nr_kwartalu" msprop:design-time-name="4f55bec2-8303-4c85-8df7-df946e6ffa7b" msprop:DbColumnName="nr_kwartalu" msprop:FriendlyName="nr_kwartalu" type="xs:double" minOccurs="0" />
+                  <xs:element name="data_końca_kwartalu" msprop:design-time-name="f8dda91c-87a6-434f-95f2-652c2deb9850" msprop:DbColumnName="data_końca_kwartalu" msprop:FriendlyName="data_końca_kwartalu" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="rok" msprop:design-time-name="7c2aec81-1c52-4a16-906f-7cb359bb3a89" msprop:DbColumnName="rok" msprop:FriendlyName="rok" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_lokal" msprop:design-time-name="4ec4d95b-6d18-4a58-822b-a52a914ad699" msprop:DbTableName="lokal" msprop:FriendlyName="lokal" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_lokal" msprop:design-time-name="5edd1362-246c-4821-981c-ea78ce640b1c" msprop:DbColumnName="id_lokal" msprop:FriendlyName="id_lokal" type="xs:double" />
+                  <xs:element name="nazwa_lokalu" msprop:design-time-name="f0d8bd45-6789-4ccb-b650-30fd516fede3" msprop:DbColumnName="nazwa_lokalu" msprop:FriendlyName="nazwa_lokalu" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="typ_lokalu" msprop:design-time-name="6c1b580a-9988-4314-be13-b00a7536a25a" msprop:DbColumnName="typ_lokalu" msprop:FriendlyName="typ_lokalu" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="liczba_lozek" msprop:design-time-name="4aeed3da-919d-4246-89b2-409b6f9f8548" msprop:DbColumnName="liczba_lozek" msprop:FriendlyName="liczba_lozek" type="xs:double" minOccurs="0" />
+                  <xs:element name="cena" msprop:design-time-name="d5507e34-8e23-4c0c-9640-79533af64375" msprop:DbColumnName="cena" msprop:FriendlyName="cena" type="xs:double" minOccurs="0" />
+                  <xs:element name="liczba_wyswietlen" msprop:design-time-name="e8d9f451-4f42-4801-9175-199098a1a725" msprop:DbColumnName="liczba_wyswietlen" msprop:FriendlyName="liczba_wyswietlen" type="xs:double" minOccurs="0" />
+                  <xs:element name="ocena" msprop:design-time-name="ff0859d3-4e2a-4cb9-9667-8da5d419c429" msprop:DbColumnName="ocena" msprop:FriendlyName="ocena" type="xs:double" minOccurs="0" />
+                  <xs:element name="id_lokalizacja" msprop:design-time-name="1610f515-c718-432f-abb1-5cb1219ecd9d" msprop:DbColumnName="id_lokalizacja" msprop:FriendlyName="id_lokalizacja" type="xs:double" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_lokalizacja" msprop:design-time-name="f8483d78-cbb6-46bc-becc-b5de427f0ca3" msprop:DbTableName="lokalizacja" msprop:FriendlyName="lokalizacja" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_lokalizacja" msprop:design-time-name="5c9dbb3f-8de9-4dc4-a353-b163d22b1799" msprop:DbColumnName="id_lokalizacja" msprop:FriendlyName="id_lokalizacja" type="xs:double" />
+                  <xs:element name="nazwa_lokalizacji" msprop:design-time-name="01641e05-4530-4f79-9f03-1c4937d58200" msprop:DbColumnName="nazwa_lokalizacji" msprop:FriendlyName="nazwa_lokalizacji" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="kod_pocztowy" msprop:design-time-name="11c794a8-f4b8-482f-bef7-77f32b6fa5f9" msprop:DbColumnName="kod_pocztowy" msprop:FriendlyName="kod_pocztowy" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_wynajem" msprop:design-time-name="4f172c69-1f16-460c-9655-5f8379143f7f" msprop:DbTableName="wynajem" msprop:FriendlyName="wynajem" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_lokal" msprop:design-time-name="bdf66fc5-0720-4fa6-9cc1-905021483bca" msprop:DbColumnName="id_lokal" msprop:FriendlyName="id_lokal" type="xs:double" />
+                  <xs:element name="data" msprop:design-time-name="d341d654-a96a-4106-b176-9721520fec4a" msprop:DbColumnName="data" msprop:FriendlyName="data" type="xs:dateTime" />
+                  <xs:element name="id_wynajmujacy" msprop:design-time-name="b98c101c-5a0d-44ee-8d6f-cfbe740b9c5f" msprop:DbColumnName="id_wynajmujacy" msprop:FriendlyName="id_wynajmujacy" type="xs:double" />
+                  <xs:element name="dni_spedzone" msprop:design-time-name="50ecfe00-3c8a-4e13-b46e-29d905ac5012" msprop:DbColumnName="dni_spedzone" msprop:FriendlyName="dni_spedzone" type="xs:double" minOccurs="0" />
+                  <xs:element name="wartosc" msprop:design-time-name="d83807d8-df96-43a5-8330-4ce6f4bf6518" msprop:DbColumnName="wartosc" msprop:FriendlyName="wartosc" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_wynajmujacy" msprop:design-time-name="614a20d8-5173-4ffc-963f-b6aca2b37ddb" msprop:DbTableName="wynajmujacy" msprop:FriendlyName="wynajmujacy" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_wynajmujacy" msprop:design-time-name="1903fd44-7592-4444-8dee-e1b685b90460" msprop:DbColumnName="id_wynajmujacy" msprop:FriendlyName="id_wynajmujacy" type="xs:double" />
+                  <xs:element name="wiek" msprop:design-time-name="ad5c3ed1-85eb-49d1-93c0-f50d0705f3cd" msprop:DbColumnName="wiek" msprop:FriendlyName="wiek" type="xs:double" minOccurs="0" />
+                  <xs:element name="plec" msprop:design-time-name="fd99f6df-e87c-4294-a1b7-76a373a464a1" msprop:DbColumnName="plec" msprop:FriendlyName="plec" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_data" />
+          <xs:field xpath="data" />
+        </xs:unique>
+        <xs:unique name="dbo_kwartal_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_kwartal" />
+          <xs:field xpath="id_kwartal" />
+        </xs:unique>
+        <xs:unique name="dbo_lokal_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_lokal" />
+          <xs:field xpath="id_lokal" />
+        </xs:unique>
+        <xs:unique name="dbo_lokalizacja_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_lokalizacja" />
+          <xs:field xpath="id_lokalizacja" />
+        </xs:unique>
+        <xs:unique name="dbo_wynajmujacy_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_wynajmujacy" />
+          <xs:field xpath="id_wynajmujacy" />
+        </xs:unique>
+        <xs:keyref name="FK_wynajem_wynajmujacy" refer="dbo_wynajmujacy_Constraint1">
+          <xs:selector xpath=".//dbo_wynajem" />
+          <xs:field xpath="id_wynajmujacy" />
+        </xs:keyref>
+        <xs:keyref name="FK_wynajem_lokal" refer="dbo_lokal_Constraint1">
+          <xs:selector xpath=".//dbo_wynajem" />
+          <xs:field xpath="id_lokal" />
+        </xs:keyref>
+        <xs:keyref name="FK_wynajem_data" refer="Constraint1">
+          <xs:selector xpath=".//dbo_wynajem" />
+          <xs:field xpath="data" />
+        </xs:keyref>
+        <xs:keyref name="FK_lokal_lokalizacja" refer="dbo_lokalizacja_Constraint1">
+          <xs:selector xpath=".//dbo_lokal" />
+          <xs:field xpath="id_lokalizacja" />
+        </xs:keyref>
+        <xs:keyref name="FK_data_kwartal" refer="dbo_kwartal_Constraint1">
+          <xs:selector xpath=".//dbo_data" />
+          <xs:field xpath="id_kwartal" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Wynajem_x0020_Mieszkan5 xmlns="" />
+  </Schema>
+</DataSourceView>
